@@ -1,0 +1,122 @@
+body {
+    background:#000;
+    padding-top:100px;
+    width:99%
+}
+.contenedor{
+    overflow:hidden ;
+}
+.caja{
+    background:#000;
+    width:50px;
+    height:50px;
+    margin:10px;
+    float:left;
+    animation-name:anima;
+    animation-duration:4s;
+    animation-delay:5s;
+    
+}
+h1{
+    color:#c7efcf;
+    font-family:"Comic Sans";
+    font-weight:bold;
+    font-size:30px;
+    text-shadow: 0px 0px 8px #ccff00;
+}
+.letras{
+    position:absolute;
+}
+.uno{
+    position:fixed;
+    left:30px;
+}
+.dos{
+    position:fixed;
+    left:100px;
+}
+.tres{
+    position:fixed;
+    left:170px;
+}
+.cuatro{
+    position:fixed;
+    left:240px;
+}
+.cinco{
+    position:fixed;
+    left:320px;
+}
+
+
+
+.cajaNumero{
+    background:#000;
+    width:120px;
+    height:50px;
+    margin:5px;
+    padding-left:20px;
+    float:left;
+    animation-name:anima;
+    animation-duration:4s;
+    animation-delay:10s;
+    
+}
+.numeros{
+    position:absolute;
+}
+.numUno{
+    color:rgb(255,128,0);
+    position:fixed;
+    left:70px;
+    animation-name:girar;
+    animation-delay:15s;
+    animation-duration:2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:infinite;
+}
+.numDos{
+    color:rgb(255,128,0);
+    position:fixed;
+    left:130px;
+    animation-name:girar;
+    animation-delay:15s;
+    animation-duration:2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:infinite;
+}
+.numTres{
+    color:rgb(255,128,0);
+    position:fixed;
+    left:200px;
+    animation-name:girar;
+    animation-delay:15s;
+    animation-duration:2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:infinite;
+}
+.numCuatro{
+    
+    color:rgb(255,128,0); 
+    text-decoration:underline;
+    position:fixed;
+    left:270px;
+    animation-name:girar;
+    animation-delay:15s;
+    animation-duration:2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count:infinite;
+}
+
+@keyframes anima{
+    25%{transform:translateY(30px);}
+    50%{transform:translateY(60px);}
+    100%{transform:translateY(80px);}
+
+}
+@keyframes girar{
+    25%{transform:rotate(45deg);}
+    50%{transform:rotate(-90deg);}
+    75%{transform:rotate(180deg);}
+    100%{transform:rotate(-360deg);}
+}
